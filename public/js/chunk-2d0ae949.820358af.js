@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0ae949"],{"0b56":function(n,e,o){"use strict";o.r(e);var t=function(){var n=this,e=n.$createElement,o=n._self._c||e;return o("div",[n._v("\n  Monitor\n")])},i=[],a={name:"Monitor"},r=a,c=o("2877"),u=Object(c["a"])(r,t,i,!1,null,"ac8dd2fa",null);u.options.__file="Monitor.vue";e["default"]=u.exports}}]);
+//# sourceMappingURL=chunk-2d0ae949.820358af.js.map
