@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +13,22 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
+//const api = {
+//    Login: '/auth/login',
+//    Logout: '/auth/logout',
+//    ForgePassword: '/auth/forge-password',
+//    Register: '/auth/register',
+//    SendSms: '/account/sms',
+//    SendSmsErr: '/account/sms_err',
+//    // get my info
+//    UserInfo: '/user/info'
+//}
+//export default api
+
+Route::namespace('Api')->group(function () {
+    Route::post('auth/login', 'AuthController@login');
+    Route::post('auth/logout', 'AuthController@logout');
 });
