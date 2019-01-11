@@ -31,4 +31,7 @@ use Illuminate\Support\Facades\Route;
 Route::namespace('Api')->group(function () {
     Route::post('auth/login', 'AuthController@login');
     Route::post('auth/logout', 'AuthController@logout');
+    Route::get('user/info', 'UserController@info');
+    Route::get('role', 'RoleController@index');
+    Route::get('service', 'ServiceController@index');
 });
